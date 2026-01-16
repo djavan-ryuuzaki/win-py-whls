@@ -1,0 +1,8 @@
+[
+  {
+    "cuda-version": "13.1",
+    "torch-version": "2.10.0",
+    "python-version": "3.13.0",
+    "download-link": "https://github.com/djavan-ryuuzaki/win-py-whls/raw/main/SageAttention/2.2.0/sageattention-2.2.0+cu131torch2.10.0-cp313-cp313-win_amd64.whl"
+  }
+]
