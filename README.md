@@ -26,6 +26,7 @@ Com PyTorch instalado e CUDA configurado, execute:
 
 ```bash
 python find_wheel.py nome_da_biblioteca
+```
 
 biblioteca-versao+cu[versao_cuda]torch[versao_torch]-cp[py]-cp[py]-win_amd64.whl
 
@@ -34,7 +35,7 @@ Exemplo:
 `minhabib-1.0.0+cu121torch2.10.0-cp313-cp313-win_amd64.whl`
 
 ---
-```
+
 ## 🚀 Como usar
 
 ### Passo 1: Baixe os scripts auxiliares
