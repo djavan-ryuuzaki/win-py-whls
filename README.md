@@ -30,7 +30,6 @@ python find.py nome_da_biblioteca
 
 biblioteca-versao+cu[versao_cuda]torch[versao_torch]-cp[py]-cp[py]-win_amd64.whl
 
-12345678910111213141516171819
 Exemplo:  
 `minhabib-1.0.0+cu121torch2.10.0-cp313-cp313-win_amd64.whl`
 
