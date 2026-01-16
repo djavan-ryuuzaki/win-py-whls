@@ -20,8 +20,7 @@ def parse_wheel_filename(filename: str):
     if len(cuda_version_str) >= 3:
         cuda_major = cuda_version_str[:-1]
         cuda_minor = cuda_version_str[-1]
-        cuda_version = f"{cuda_major}.{cuda_minor}"
-        print (cuda_version)
+        cuda_version = f"{cuda_major}.{cuda_minor}"        
     else:
         # fallback simples
         cuda_version = cuda_version_str
