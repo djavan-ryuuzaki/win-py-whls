@@ -56,7 +56,18 @@ def get_python_version():
 def get_torch_version():
     try:
         import torch
-        return torch.__version__.split('+')[0]
+        full_version = torch.__version__
+        # Remove tudo após o terceiro número (ignora .dev, +cu, -rc, etc.)
+        match = re.match(r'^(\d+\.\d+\.\d+)', full_version)
+        if match:
+            return match.group(1)
+        else:
+            # Caso raro: versão sem patch (ex: 2.1) → transforma em 2.1.0
+            match2 = re.match(r'^(\d+\.\d+)', full_version)
+            if match2:
+                return match2.group(1) + ".0"
+            else:
+                return full_version  # fallback
     except ImportError:
         return None
 

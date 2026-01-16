@@ -16,7 +16,7 @@ Exemplo:
 
 ### Passo 1: Baixe os scripts auxiliares
 Baixe os seguintes arquivos para seu ambiente local:
-- [`find_wheel.py`](./find_wheel.py) — encontra a wheel compatível com seu sistema.
+- [`find.py`](./find.py) — encontra a wheel compatível com seu sistema.
 - [`wheels.json`](./wheels.json) — índice atualizado de todas as wheels disponíveis.
 
 > 💡 Você também pode clonar este repositório inteiro.
@@ -25,7 +25,7 @@ Baixe os seguintes arquivos para seu ambiente local:
 Com PyTorch instalado e CUDA configurado, execute:
 
 ```bash
-python find_wheel.py nome_da_biblioteca
+python find.py nome_da_biblioteca
 ```
 
 biblioteca-versao+cu[versao_cuda]torch[versao_torch]-cp[py]-cp[py]-win_amd64.whl
@@ -40,7 +40,7 @@ Exemplo:
 
 ### Passo 1: Baixe os scripts auxiliares
 Baixe os seguintes arquivos para seu ambiente local:
-- [`find_wheel.py`](./find_wheel.py) — encontra a wheel compatível com seu sistema.
+- [`find.py`](./find.py) — encontra a wheel compatível com seu sistema.
 
 O script irá:
 
@@ -62,17 +62,19 @@ pip install "https://github.com/djavan-ryuuzaki/win-py-whls/raw/main/..."
 <!-- BEGIN_WHEELS_SECTION -->
 | Biblioteca | Python | PyTorch | CUDA | Download |
 |-----------|--------|---------|------|----------|
+| `sageattention` | 3.13.0 | 2.10.0 | 13.0 | [📥 sageattention-2.2.0+cu130torch2.10.0-cp313-cp313-win_amd64.whl](https://github.com/djavan-ryuuzaki/win-py-whls/raw/main/SageAttention/2.2.0/sageattention-2.2.0+cu130torch2.10.0-cp313-cp313-win_amd64.whl) |
 | `sageattention` | 3.13.0 | 2.10.0 | 13.1 | [📥 sageattention-2.2.0+cu131torch2.10.0-cp313-cp313-win_amd64.whl](https://github.com/djavan-ryuuzaki/win-py-whls/raw/main/SageAttention/2.2.0/sageattention-2.2.0+cu131torch2.10.0-cp313-cp313-win_amd64.whl) |
+| `sageattention` | 3.13.0 | 2.9.0 | 13.0 | [📥 sageattention-2.2.0+cu130torch2.9.0-cp313-cp313-win_amd64.whl](https://github.com/djavan-ryuuzaki/win-py-whls/raw/main/SageAttention/2.2.0/sageattention-2.2.0+cu130torch2.9.0-cp313-cp313-win_amd64.whl) |
 <!-- END_WHEELS_SECTION -->
 
 🛠️ Atualizando o Índice (para mantenedores)
 Adicione novas wheels na estrutura de pastas (biblioteca/versão/arquivo.whl).
 Execute:
 ```bash
-python build_index.py . --repo-url https://github.com/seu-usuario/seu-repo
+python build-index.py . --repo-url https://github.com/seu-usuario/seu-repo
 ```
 Atualize o README:
 ```bash
-python update_readme.py
+python update-readme.py
 ```
 Faça commit das mudanças (wheels.json, README.md, e os novos .whl).
