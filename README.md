@@ -34,7 +34,7 @@ Exemplo:
 `minhabib-1.0.0+cu121torch2.10.0-cp313-cp313-win_amd64.whl`
 
 ---
-
+```
 ## 🚀 Como usar
 
 ### Passo 1: Baixe os scripts auxiliares
@@ -51,10 +51,11 @@ Use --use-torch-cuda se quiser priorizar a versão do CUDA usada pelo PyTorch em
 Passo 3: Instale a wheel
 Copie o link exibido e instale com pip:
 
-bash
-1
-pip install "https://github.com/seu-usuario/seu-repo/raw/main/..."
+```bash
+pip install "https://github.com/djavan-ryuuzaki/win-py-whls/raw/main/..."
 🔁 Substitua seu-usuario/seu-repo pela URL real do seu repositório antes de publicar!
+
+```
 
 📥 Wheels Disponíveis
 <!-- BEGIN_WHEELS_SECTION -->
@@ -66,11 +67,11 @@ pip install "https://github.com/seu-usuario/seu-repo/raw/main/..."
 🛠️ Atualizando o Índice (para mantenedores)
 Adicione novas wheels na estrutura de pastas (biblioteca/versão/arquivo.whl).
 Execute:
-bash
-1
+```bash
 python build_index.py . --repo-url https://github.com/seu-usuario/seu-repo
+```
 Atualize o README:
-bash
-1
+```bash
 python update_readme.py
+```
 Faça commit das mudanças (wheels.json, README.md, e os novos .whl).
